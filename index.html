@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FRC Defense Strategy Tool - 868 / 761</title>
+  <title>FRC Defense Strategy Tool - 868 / 761 FINAL</title>
   <style>
     :root { --bg:#0f172a; --panel:#111827; --card:#1f2937; --muted:#94a3b8; --text:#f8fafc; --accent:#38bdf8; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
     *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#0f172a,#020617);color:var(--text)}
-    .wrap{max-width:1220px;margin:0 auto;padding:24px}.hero{display:grid;gap:8px;margin-bottom:20px}.hero h1{margin:0;font-size:clamp(28px,4vw,44px)}.hero p{margin:0;color:var(--muted);font-size:16px}.panel{background:rgba(17,24,39,.92);border:1px solid rgba(148,163,184,.2);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.25);margin-bottom:18px}.controls{display:grid;grid-template-columns:repeat(6,minmax(140px,1fr));gap:12px;align-items:end}.field label{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}input,select,button{width:100%;border-radius:12px;border:1px solid rgba(148,163,184,.28);background:#020617;color:var(--text);padding:10px 12px;font-size:15px}button{cursor:pointer;background:linear-gradient(135deg,#0284c7,#0369a1);border:none;font-weight:700}.small{font-size:12px;color:var(--muted)}.status{margin-top:12px;color:var(--muted)}.match{background:rgba(31,41,55,.9);border:1px solid rgba(148,163,184,.16);border-radius:18px;padding:16px;margin:14px 0}.matchTop{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.tag{display:inline-flex;padding:4px 9px;border-radius:999px;background:#0f172a;color:#bae6fd;border:1px solid rgba(56,189,248,.35);font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;margin-top:12px}.teamCard{border-radius:14px;background:#020617;border:1px solid rgba(148,163,184,.18);padding:12px;margin-bottom:10px}.teamHeader{display:flex;justify-content:space-between;gap:10px;align-items:center}.teamNum{font-size:22px;font-weight:900}.score{font-size:22px;font-weight:900;color:#7dd3fc}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.metric{background:#111827;border-radius:12px;padding:8px}.metric b{display:block;font-size:15px}.metric span{color:var(--muted);font-size:12px}.manual{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.recommend{border-radius:14px;padding:12px;background:linear-gradient(135deg,rgba(34,197,94,.16),rgba(56,189,248,.08));border:1px solid rgba(34,197,94,.35)}.endgame{border-radius:14px;padding:12px;background:#020617;border:1px solid rgba(148,163,184,.18);margin-bottom:10px}.danger{color:#fecaca}.good{color:#bbf7d0}.warn{color:#fde68a}.roleGrid{display:grid;grid-template-columns:1fr;gap:8px}.roleCard{border-radius:12px;background:#111827;border:1px solid rgba(148,163,184,.16);padding:10px}.roleName{font-weight:900}.hidden{display:none}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:8px;border-bottom:1px solid rgba(148,163,184,.16);text-align:left}.table th{color:var(--muted);font-size:12px} details{margin-top:12px;color:var(--muted)} code{color:#bae6fd}@media(max-width:850px){.controls,.grid{grid-template-columns:1fr}.manual,.metrics{grid-template-columns:1fr}.wrap{padding:14px}}
+    .wrap{max-width:1220px;margin:0 auto;padding:24px}.hero{display:grid;gap:8px;margin-bottom:20px}.hero h1{margin:0;font-size:clamp(28px,4vw,44px)}.hero p{margin:0;color:var(--muted);font-size:16px}.panel{background:rgba(17,24,39,.92);border:1px solid rgba(148,163,184,.2);border-radius:18px;padding:18px;box-shadow:0 20px 60px rgba(0,0,0,.25);margin-bottom:18px}.controls{display:grid;grid-template-columns:repeat(6,minmax(140px,1fr));gap:12px;align-items:end}.field label{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}input,select,button{width:100%;border-radius:12px;border:1px solid rgba(148,163,184,.28);background:#020617;color:var(--text);padding:10px 12px;font-size:15px}button{cursor:pointer;background:linear-gradient(135deg,#0284c7,#0369a1);border:none;font-weight:700}.small{font-size:12px;color:var(--muted)}.status{margin-top:12px;color:var(--muted)}.match{background:rgba(31,41,55,.9);border:1px solid rgba(148,163,184,.16);border-radius:18px;padding:16px;margin:14px 0}.matchTop{display:flex;gap:12px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.tag{display:inline-flex;padding:4px 9px;border-radius:999px;background:#0f172a;color:#bae6fd;border:1px solid rgba(56,189,248,.35);font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;margin-top:12px}.teamCard{border-radius:14px;background:#020617;border:1px solid rgba(148,163,184,.18);padding:12px;margin-bottom:10px}.teamHeader{display:flex;justify-content:space-between;gap:10px;align-items:center}.teamNum{font-size:22px;font-weight:900}.score{font-size:22px;font-weight:900;color:#7dd3fc}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}.metric{background:#111827;border-radius:12px;padding:8px}.metric b{display:block;font-size:15px}.metric span{color:var(--muted);font-size:12px}.manual{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.recommend{border-radius:14px;padding:12px;background:linear-gradient(135deg,rgba(34,197,94,.16),rgba(56,189,248,.08));border:1px solid rgba(34,197,94,.35)}.endgame{border-radius:14px;padding:12px;background:#020617;border:1px solid rgba(148,163,184,.18);margin-bottom:10px}.danger{color:#fecaca}.good{color:#bbf7d0}.warn{color:#fde68a}.strategyCall{border-radius:16px;padding:14px;margin:12px 0;border:1px solid rgba(148,163,184,.22);background:#020617}.strategyCall.play{border-color:rgba(34,197,94,.55);background:linear-gradient(135deg,rgba(34,197,94,.20),rgba(56,189,248,.08))}.strategyCall.no{border-color:rgba(245,158,11,.55);background:linear-gradient(135deg,rgba(245,158,11,.18),rgba(56,189,248,.06))}.bigCall{font-size:24px;font-weight:1000;margin:0 0 4px 0}.roleGrid{display:grid;grid-template-columns:1fr;gap:8px}.roleCard{border-radius:12px;background:#111827;border:1px solid rgba(148,163,184,.16);padding:10px}.roleName{font-weight:900}.hidden{display:none}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:8px;border-bottom:1px solid rgba(148,163,184,.16);text-align:left}.table th{color:var(--muted);font-size:12px} details{margin-top:12px;color:var(--muted)} code{color:#bae6fd}@media(max-width:850px){.controls,.grid{grid-template-columns:1fr}.manual,.metrics{grid-template-columns:1fr}.wrap{padding:14px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
       <h1>FRC Defense Strategy Tool</h1>
-      <p>Live Statbotics version for Team 868/Newton and Team 761/Hopper. Ranks defensive targets and recommends alliance roles.</p>
+      <p>Live Statbotics version for Team 868/Newton and Team 761/Hopper. Recommends whether to play defense, who to defend, and how to assign alliance roles.</p>
     </section>
 
     <section class="panel">
@@ -30,6 +30,7 @@
       <details>
         <summary>Formula and scouting scales</summary>
         <p><b>Opponent defense score</b> = <code>teleop EPA × 0.60 + contribution % × weight + vulnerability × 5</code>.</p>
+        <p><b>Play defense estimate</b> compares likely points denied against the defender's offensive opportunity cost. If the tradeoff is not favorable, the tool recommends running three offense.</p>
         <p><b>Recommended defender fit</b> = <code>defense ability × 10 - teleop EPA × 0.60 - endgame EPA × 0.40</code>.</p>
         <p><b>Vulnerability:</b> 5 = easy to slow down, 3 = average, 1 = hard to affect. <b>Endgame disruptability:</b> 5 = likely can delay/stop, 1 = leave them alone. <b>Defense ability:</b> 5 = strong defender, 1 = poor defender.</p>
       </details>
@@ -70,6 +71,35 @@ function teamsFromAlliance(a){
 }
 function matchLabel(m){ return m.key || m.match || `${(m.comp_level||'qm').toUpperCase()} ${m.match_number||''}`; }
 function compLevel(m){ return String(m.comp_level || m.level || m.match || "qm").toLowerCase(); }
+
+function isQual(m){
+  const c = compLevel(m);
+  return c === "qm" || c.includes("qm") || String(matchLabel(m)).toLowerCase().includes("qm");
+}
+function playoffRank(m){
+  const c = compLevel(m);
+  if(c === "qm" || c.includes("qm")) return 0;
+  if(c === "ef" || c.includes("ef")) return 1;
+  if(c === "qf" || c.includes("qf") || c.includes("quarter")) return 2;
+  if(c === "sf" || c.includes("sf") || c.includes("semi")) return 3;
+  if(c === "f" || c.includes("final")) return 4;
+  return 9;
+}
+function matchNumber(m){
+  const label = String(matchLabel(m)).toLowerCase();
+  return Number(m.match_number || m.match_num || (label.match(/(qm|ef|qf|sf|f)[^0-9]*(\d+)/)?.[2]) || 0);
+}
+function setNumber(m){
+  return Number(m.set_number || m.set_num || 0);
+}
+function sortMatches(matches){
+  return [...matches].sort((a,b)=>
+    playoffRank(a) - playoffRank(b) ||
+    setNumber(a) - setNumber(b) ||
+    matchNumber(a) - matchNumber(b) ||
+    String(matchLabel(a)).localeCompare(String(matchLabel(b)))
+  );
+}
 async function fetchJson(url){
   const r = await fetch(url);
   if(!r.ok) throw new Error(`${r.status} ${r.statusText}: ${url}`);
@@ -91,8 +121,11 @@ async function load(){
       const num = Number(row.team || row.team_num || row.team_number);
       if(num) teamData.set(num, {team:num, name: row.name || row.team_name || "", ...epaParts(row)});
     });
-    matchData = (Array.isArray(matches)?matches:matches.data||[]).filter(m=> compLevel(m).includes("qm") || compLevel(m)==="qm" || String(matchLabel(m)).toLowerCase().includes("qm"));
-    $("status").textContent = `Loaded ${teamData.size} teams and ${matchData.length} qualification matches for ${eventKey}.`;
+    const rawMatches = (Array.isArray(matches)?matches:matches.data||[]);
+    const hasElims = rawMatches.some(m => !isQual(m));
+    matchData = sortMatches(hasElims ? rawMatches : rawMatches.filter(isQual));
+    const modeText = hasElims ? "qualification + elimination matches" : "qualification matches";
+    $("status").textContent = `Loaded ${teamData.size} teams and ${matchData.length} ${modeText} for ${eventKey}.`;
     render();
   } catch(err){
     $("status").innerHTML = `<span class="danger">Could not load data.</span> ${err.message}<br><span class="small">If the API blocks local files, put this HTML file in a folder, run <code>python -m http.server</code>, then open the localhost link.</span>`;
@@ -128,6 +161,22 @@ function rolePlan(us){
   const scorers = roles.filter(r=>r.team!==defender.team).sort((a,b)=>b.teleop-a.teleop);
   return {roles, defender, primary:scorers[0], secondary:scorers[1]};
 }
+function defenseDecision(target, defender){
+  // Estimated percentage of target teleop EPA that can be denied based on vulnerability.
+  // 1=10%, 2=18%, 3=26%, 4=34%, 5=42%.
+  const suppression = 0.02 + (target.vulnerability * 0.08);
+  const carryBonus = Math.max(0, target.contribution - 0.33) * 0.75;
+  const pointsDenied = target.teleop * suppression * (1 + carryBonus);
+  // Defender will usually still contribute some value while defending, so use partial teleop opportunity cost.
+  const offenseCost = Math.max(0, defender.teleop * 0.65);
+  const singlePointFailure = target.contribution >= 0.45 && target.vulnerability >= 3;
+  const clearValue = pointsDenied >= offenseCost;
+  const play = clearValue || (singlePointFailure && pointsDenied >= offenseCost * 0.75);
+  let reason = play
+    ? `Estimated points denied (${round(pointsDenied)}) is worth the offensive cost (${round(offenseCost)}), or the opponent has a single-point-of-failure scorer.`
+    : `Estimated points denied (${round(pointsDenied)}) is lower than the defender's offensive cost (${round(offenseCost)}). Run three offense unless match video/scouting says otherwise.`;
+  return {play, pointsDenied, offenseCost, suppression, reason};
+}
 function render(){
   const yourTeam = Number($("teamNum").value);
   const ourEndgame = Number($("ourEndgame").value || 0);
@@ -148,14 +197,20 @@ function render(){
     const disruptableEndgame = target.endgame * (target.disrupt/5);
     const stay = disruptableEndgame > ourEndgame;
     const plan = rolePlan(us);
+    const decision = defenseDecision(target, plan.defender);
     return `<article class="match">
       <div class="matchTop">
         <div><span class="tag">${matchLabel(m)}</span> <span class="tag">${yourTeam} is ${color}</span><h2>Primary Target: Team ${target.team}</h2></div>
-        <div class="recommend"><b>Call:</b> ${plan.defender.team} defends ${target.team}<br><span class="small">Target teleop ${round(target.teleop)} • Contribution ${round(target.contribution*100,0)}% • Score ${round(target.defenseScore)}</span></div>
+        <div class="recommend"><b>Best target if defending:</b> Team ${target.team}<br><span class="small">Target teleop ${round(target.teleop)} • Contribution ${round(target.contribution*100,0)}% • Score ${round(target.defenseScore)}</span></div>
+      </div>
+      <div class="strategyCall ${decision.play?'play':'no'}">
+        <p class="bigCall">${decision.play?'✅ PLAY DEFENSE':'⚠️ RUN 3 OFFENSE'}</p>
+        <div>${decision.play ? `Suggested call: Team ${plan.defender.team} defends Team ${target.team}.` : `Suggested call: keep all three robots scoring unless your scouting strongly favors defense.`}</div>
+        <div class="small">${decision.reason}<br>Estimated target suppression: ${round(decision.suppression*100,0)}% of teleop EPA.</div>
       </div>
       <div class="grid">
         <div>${ranked.map((r,i)=>opponentCard(r,i)).join("")}</div>
-        <div>${roleSection(plan,target)}<div class="endgame"><h3>Endgame decision</h3><p><b class="${stay?'warn':'good'}">${stay?'Stay on defense':'Leave and score/endgame'}</b></p><p class="small">Target disruptable endgame value: ${round(disruptableEndgame)}<br>Your defender endgame/scoring value: ${round(ourEndgame)}</p><p class="small">Use this as a drive-coach checkpoint around the last 25–30 seconds.</p></div><div class="teamCard"><b>Your alliance:</b> ${us.join(", ")}<br><b>Opponents:</b> ${opp.join(", ")}</div></div>
+        <div>${roleSection(plan,target,decision)}<div class="endgame"><h3>Endgame decision</h3><p><b class="${stay?'warn':'good'}">${decision.play ? (stay?'Stay on defense':'Leave and score/endgame') : 'Run your planned endgame'}</b></p><p class="small">Target disruptable endgame value: ${round(disruptableEndgame)}<br>Your defender endgame/scoring value: ${round(ourEndgame)}</p><p class="small">Use this as a drive-coach checkpoint around the last 25–30 seconds.</p></div><div class="teamCard"><b>Your alliance:</b> ${us.join(", ")}<br><b>Opponents:</b> ${opp.join(", ")}</div></div>
       </div>
     </article>`;
   }).join("");
@@ -164,8 +219,11 @@ function opponentCard(r,i){
   const rankLabel = i===0 ? "DEFEND" : i===1 ? "Backup target" : "Lower priority";
   return `<div class="teamCard"><div class="teamHeader"><div><div class="teamNum">#${i+1} Team ${r.team}</div><span class="tag">${rankLabel}</span></div><div class="score">${round(r.defenseScore)}</div></div><div class="metrics"><div class="metric"><b>${round(r.teleop)}</b><span>Teleop EPA</span></div><div class="metric"><b>${round(r.contribution*100,0)}%</b><span>Alliance teleop share</span></div><div class="metric"><b>${round(r.endgame)}</b><span>Endgame EPA</span></div></div><div class="manual"><label class="field">Vulnerability<br><input type="number" min="1" max="5" value="${r.vulnerability}" onchange="updateScout(${r.team},'vulnerability',this.value)"></label><label class="field">Endgame disruptability<br><input type="number" min="1" max="5" value="${r.disrupt}" onchange="updateScout(${r.team},'disruptability',this.value)"></label></div></div>`;
 }
-function roleSection(plan,target){
-  return `<div class="endgame"><h3>Your alliance role plan</h3><p><b>Recommended defender:</b> Team ${plan.defender.team}<br><span class="small">Uses lowest scoring opportunity cost + defense ability rating.</span></p><p><b>Primary scorer:</b> Team ${plan.primary?.team ?? "—"}<br><b>Secondary scorer:</b> Team ${plan.secondary?.team ?? "—"}</p><div class="roleGrid">${plan.roles.sort((a,b)=>b.defenderScore-a.defenderScore).map(r=>roleCard(r,plan.defender.team)).join("")}</div><p class="small">Suggested plan: ${plan.defender.team} starts defense on ${target.team}; the other two teams maximize scoring cycles.</p></div>`;
+function roleSection(plan,target,decision){
+  const roleText = decision.play
+    ? `Suggested plan: ${plan.defender.team} starts defense on ${target.team}; the other two teams maximize scoring cycles.`
+    : `Suggested plan: all three robots prioritize scoring. If defense becomes necessary, ${plan.defender.team} is the lowest-cost defender.`;
+  return `<div class="endgame"><h3>Your alliance role plan</h3><p><b>${decision.play?'Recommended defender':'Emergency defender only'}:</b> Team ${plan.defender.team}<br><span class="small">Uses lowest scoring opportunity cost + defense ability rating.</span></p><p><b>Primary scorer:</b> Team ${plan.primary?.team ?? "—"}<br><b>Secondary scorer:</b> Team ${plan.secondary?.team ?? "—"}</p><div class="roleGrid">${plan.roles.sort((a,b)=>b.defenderScore-a.defenderScore).map(r=>roleCard(r,plan.defender.team)).join("")}</div><p class="small">${roleText}</p></div>`;
 }
 function roleCard(r,defenderTeam){
   return `<div class="roleCard"><div class="roleName">Team ${r.team} ${r.team===defenderTeam?'<span class="tag">DEFENDER</span>':''}</div><div class="metrics"><div class="metric"><b>${round(r.teleop)}</b><span>Teleop EPA</span></div><div class="metric"><b>${round(r.endgame)}</b><span>Endgame EPA</span></div><div class="metric"><b>${round(r.defenderScore)}</b><span>Defender fit</span></div></div><label class="field">Defense ability<br><input type="number" min="1" max="5" value="${r.defenseAbility}" onchange="updateScout(${r.team},'defenseAbility',this.value)"></label></div>`;
